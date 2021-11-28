@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Contato</title>
+    <link rel="stylesheet" href="../css/contato.css" />
+    <link rel="shortcut icon" type="imagex/png" href="../Imagem/telefone.jpg">
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" type="imagex/png" href="Imagens/telefone.jpg">
+    <script src="../js/contato.js"></script>
+
+</head>
+
+<body>
+    <div class="body">
+    <header class="cabeca"> CONTATO
+        
+        <div class="titulo_nav">
+
+
+            <nav class="menu"><a href="../Imagem/download.jpg"><img class="imag" src="../Imagem/download.jpg"> </a>
+
+
+
+                </ul>
+                <ul>
+                    <li class="item_menu"><a class="link_menu" href="../HTML/Main.html" target="_blank">Sobre</a></li>
+                   
+                    <li class="item_menu"><a class="link_menu" href="../HTML/qs.html" target="_blank">Quem Somos</a></li>
+                    <li class= "item_menu" ><a class="link_menu" href="../HTML/Integração.html" target="_blank"> Apresentação </a> </li>
+                    
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+      
+        <form id="formContato" action="arquivoqueRecebeberáosDados.php" method="POST" onsubmit="return v();">
+
+            <div class="mensagem" style="color: red;"><span id="msgErro"></span> </div>
+
+            <label for="nomesobrenome"> Nome e Sobrenome </label>
+
+            <input class="input_padrao" type="text" id="nomesobrenome" name="nomesobrenome" maxlength="25"
+                placeholder="nome e último sobrenome" />
+                <label for="nomesobrenome"> Idade </label>
+
+                <input class="input_padrao" type="number" id="idade" name="idade" min="12" max="85" />
+
+
+            <label for="email">Email </label>
+
+            <input class="input_padrao" type="email" id="email" name="email" placeholder="emailseu@dominio.com" />
+
+            <label for="telefone">Telefone </label>
+
+            <input class="input_padrao" type="tel" ID="telefone" minlength="2" maxlength="15"
+                placeholder="(XX) XXXXX-XXXX" />
+
+            <label for="mensagem">Mensagem</label>
+
+            <textarea class="input_padrao" cols="25" rows="8" id="mensagem"> </textarea>
+
+
+
+            <fieldset>
+                <p >Como prefere nosso contato?</p>
+                <br>
+                <label for="radio-email"> <input type="radio" name="contato" value="email" id="radio-email">
+                    Email</label>
+                <label for="radio-telefone"> <input type="radio" name="contato" value="telefone" id="radio-telefone">
+                    Telefone</label>
+                <label for="radio-whatsapp"> <input type="radio" name="contato" value="whatsapp" id="radio-whatsapp">
+                    Whatsapp </label>
+
+            </fieldset>
+            <br>
+           
+            
+            <br>
+            <div style="text-align: left;">
+                <legend>Em qual período prefere nosso contato?</legend>
+                <select class="select-periodo">
+                    <option>Manhã</option>
+                    <option>Tarde</option>
+                    <option>Noite</option>
+                </select>
+            </div>
+            <br>
+            <br>
+            <!--
+    TAG --- 1
+    CLASSE --- 10
+    ID -- 100
+    INLINE -- 1000
+-->
+            <input type="submit" value="Enviar formulário" class="enviar">
+        </form>
+    
+    </main>
+
+
+    <footer class="roda">
+        &copy; Lukyan Sigarini de Paiva, Henrique Holsbeck Fujikawa & Bernardo Fernandez / 2021 "Homofobia, racismo e o sexismo são transtornos de
+        personalidades intolerantes."
+    </footer>
+</div>
+</body>
+
+</html>
