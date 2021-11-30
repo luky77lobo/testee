@@ -1,0 +1,134 @@
+.titulo{
+    text-align: center;
+    margin: 0 5px 0 0;
+    font-size: 60px;
+    font-family: 'Permanent Marker', cursive;
+    }
+    nav{
+    margin: 10px 0 0 0;
+    
+    }
+ 
+    h1{
+        font-size: 50px;
+        text-align: center;
+    }
+    p{
+    font-family: 'Lato', sans-serif;
+    
+    }
+    ul {
+    margin: 0 0 0 5px;
+    padding:0;
+    }
+    body{
+    background: linear-gradient(90deg, #0F2C67,#CD1818, yellow, #F3950D, rgb(49, 240, 247), indigo);
+    background-size: 330% 330%;
+    margin-left: 20%;
+    margin-right: 20%;
+    
+    padding: 50px 50px 50px 50px;
+    animation: colors 5s ease infinite;
+    }
+    
+    .body{
+    margin-left: auto;
+    margin-right: auto;
+    
+    padding: 50px 50px 50px 50px;
+    font-family: 'Open sans', cursive;
+    background-color: white;
+    /* -webkit-animation: colorchange 13s infinite;
+    animation: colorchange 13s ease-in infinite; */
+    }
+    
+    @keyframes colors{
+    0%{
+    background-position: 0% 30%;
+    }
+    
+    50%{
+    
+    background-position: 100% 50%;
+    }
+    
+    100%{
+    background-position: 0% 50%;
+    }
+    }
+    
+    a {
+    padding: 5px 10px;
+    text-align: center;
+    border: 0px solid #f00;
+    background: black;
+    text-decoration: solid;
+    margin-left: auto;
+    margin-right: auto;
+    color:#FFF;
+    /* cantos arredondados */
+    -webkit-border-radius:5px;
+    -moz-border-radius:5px;
+    border-radius:5px;
+    display: block;
+    }
+    
+    li a:hover {
+    background: #CCC;
+    color: #000;
+    border-color: #000;
+    }
+    li a:active{
+    text-decoration: solid;
+    color: #f00;
+    }
+    
+    #rodape {
+    margin-top: 250px;
+    
+    text-align:center;
+    }
+    .logo {
+    text-align:center;
+    
+    padding: 8px 0 0 0;
+    }
+    p.copyright{
+    color: lightskyblue;
+    text-align:center;
+    margin:0 auto;
+    margin-top:10px;
+    }
+    @media (max-width: 890px){
+    .cabecalho{
+    flex-direction: column;
+    
+    align-items: center;
+    
+    }
+    a{
+        display: block;
+        flex-direction: column;
+    }
+    
+    .titulo{
+    font-size: 100%;
+    display: inline-block;
+    flex-direction: column;
+    }
+    
+    p{
+    display: inline;
+    }
+    img{
+    width: 100%;
+    height: 100%;
+    
+    }
+    h1{
+        display: inline-block;
+        font-size: 100%;
+    }
+    
+    
+    }
